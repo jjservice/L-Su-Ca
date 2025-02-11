@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Cancelled</title>
     <style>
-        /* Basic Reset */
-        * {
+       /* Basic Reset */
+       * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -18,23 +18,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 10px;
         }
 
         .container {
+            margin: 0% auto;
             text-align: center;
             background-color: white;
             padding: 40px;
-            border-radius: 10px;
             box-shadow: 0 2px 15px black;
             border: 1px solid #dc3545;
+            border-radius: 15px;
+            max-width: 90%;
+            height: 300px;
+          
         }
 
         .cancel-message {
             margin: 0% auto;
             max-width: 90%;
-            padding: 10px;
         }
-
         .icon {
             font-size: 50px;
             color: #dc3545; /* Red color for error */
@@ -69,6 +72,28 @@
             transform: scale(1.10);
             transition: 0.5s;
             background-color: rgb(76, 76, 235);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+            margin: 0% auto;
+            text-align: center;
+           
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 95%;
+            
+        }
+        .container {
+            width: 450px;
+        }
+
+        .cancel-message {
+            width: 450px;
+            
+        }
+
+
         }
     </style>
 </head>
